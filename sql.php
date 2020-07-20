@@ -1,4 +1,12 @@
 <?php
+  $nombreimg=$_FILES['imagen']['name'];
+  $imagen=$_FILES['imagen']['tmp_name'];
+  $nombre=$_POST['nombre'];
+  $precio=$_POST['precio'];
+  $ruta="images";
+  $ruta=$ruta."/".$nombreimg;
+
+  move_uploaded_file($imagen,$ruta);
 class SQL {
   public static function main() {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
