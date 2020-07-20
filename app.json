@@ -1,0 +1,7 @@
+{
+  "name": "PHP Y MYSQL en HEROKU por Osiann",
+  "description": "Template PHP Y MYSQL en HEROKU por Osiann",
+  "addons": [
+       "cleardb:ignite"
+   ]
+}
